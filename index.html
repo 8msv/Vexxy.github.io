@@ -13,15 +13,13 @@
             overflow-x: hidden;
             background: url('https://img.freepik.com/free-vector/realistic-black-background-with-wavy-lines_23-2149167225.jpg') no-repeat center center fixed;
             background-size: cover;
-            filter: blur(5px);
+            filter: blur(3px); /* Initial blur */
             transition: filter 0.5s ease-in-out;
         }
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            opacity: 0;
-            animation: fadeIn 1s ease forwards;
         }
         .box {
             background-color: rgba(44, 44, 44, 0.8);
@@ -73,9 +71,11 @@
         @keyframes fadeIn {
             from {
                 opacity: 0;
+                filter: blur(3px);
             }
             to {
                 opacity: 1;
+                filter: blur(0px);
             }
         }
     </style>
@@ -101,14 +101,9 @@
         </div>
     </div>
     <script>
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.body.style.filter = "blur(0px)";
-            } else {
-                document.body.style.filter = "blur(5px)";
-            }
-        }
+        window.onload = function() {
+            document.body.style.filter = "blur(0px)"; // Remove blur after fade-in animation
+        };
     </script>
 </body>
 </html>
