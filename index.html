@@ -1,64 +1,41 @@
-
+<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8">
-<meta content="IE=edge" http-equiv="X-UA-Compatible">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Sky Cheats</title>
-<script src="https://cdn.tailwindcss.com"></script></head><body>
-<nav class="bg-white shadow dark:bg-gray-800">
-<div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
-<a class="text-gray-800 transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6" href="#">Downloads</a>
-</div>
-</nav>
-<section class="bg-white dark:bg-gray-900">
-<nav class="container p-6 mx-auto lg:flex lg:justify-between lg:items-center" x-data="{ isOpen: false }">
-<div class="flex items-center justify-between">
-<a href="#">
-<span class="font-bold font-sans px-2.5 py-1 rounded text-2xl text-gray-700 dark:text-gray-100">Sky Cheats</span>
-</a>
-<!-- Mobile menu button -->
-<div class="flex lg:hidden">
-<button aria-label="toggle menu" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" type="button" x-cloak="">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" x-show="!isOpen" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 8h16M4 16h16" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" x-show="isOpen" xmlns="http://www.w3.org/2000/svg">
-<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-</button>
-</div>
-</div>
-<!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-<div :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white shadow-md lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:bg-transparent lg:dark:bg-transparent lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center" x-cloak="">
-<div class="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0">
-<a class="text-gray-700 lg:mx-6 dark:text-gray-200 dark:hover:text-blue-400 hover:text-blue-500" href="#">Home</a>
-</div>
-</div>
-</nav>
-</section>
-<section class="bg-white dark:bg-gray-900">
-<div class="container px-6 py-16 mx-auto text-center">
-<div class="max-w-lg mx-auto">
-<h1 class="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">Crafting stunning website designs with Sky Cheats.</h1>
-<p class="mt-6 text-gray-500 dark:text-gray-300">Experience the freedom of innovative web solutions. Unleash your potential with our cutting-edge technology.</p>
-<div class="w-full max-w-sm mx-auto mt-6 bg-transparent border rounded-md dark:border-gray-700 focus-within:border-blue-400 focus-within:ring focus-within:ring-blue-300 dark:focus-within:border-blue-300 focus-within:ring-opacity-40">
-<form class="flex flex-col md:flex-row">
-<input class="flex-1 h-10 px-4 py-2 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0" placeholder="Enter your email address" type="email">
-<button class="h-10 px-4 py-2 m-1 text-white transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400" type="button">Get Started</button>
-</form>
-</div>
-</div>
-</div>
-</section>
-<footer class="bg-white dark:bg-gray-900">
-<div class="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
-<a href="#">
-<span class="font-bold font-sans px-2.5 py-1 rounded text-2xl text-gray-700 dark:text-gray-100">Sky Cheats</span>
-</a>
-<p class="text-sm text-gray-600 dark:text-gray-300">
-Sky Cheats 
-© Copyright 2021. All Rights Reserved.</p>
-</div>
-</footer>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Sky Cheats</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Hide content by default */
+        body {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-white shadow dark:bg-gray-800">
+        <!-- Navigation content -->
+    </nav>
+
+    <!-- Other sections and content -->
+
+    <footer class="bg-white dark:bg-gray-900">
+        <!-- Footer content -->
+    </footer>
+
+    <script>
+        // JavaScript to fade in content when page is loaded
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.display = "block"; // Show content
+            document.body.style.opacity = "0"; // Set initial opacity to 0
+
+            // Fade in content with transition
+            setTimeout(function() {
+                document.body.style.transition = "opacity 1s";
+                document.body.style.opacity = "1";
+            }, 100);
+        });
+    </script>
 </body>
 </html>
