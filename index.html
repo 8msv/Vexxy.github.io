@@ -1,41 +1,66 @@
-<!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Sky Cheats</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Hide content by default */
-        body {
-            display: none;
-        }
-    </style>
-</head>
-<body>
-    <nav class="bg-white shadow dark:bg-gray-800">
-        <!-- Navigation content -->
-    </nav>
-
-    <!-- Other sections and content -->
-
-    <footer class="bg-white dark:bg-gray-900">
-        <!-- Footer content -->
-    </footer>
-
-    <script>
-        // JavaScript to fade in content when page is loaded
-        document.addEventListener("DOMContentLoaded", function() {
-            document.body.style.display = "block"; // Show content
-            document.body.style.opacity = "0"; // Set initial opacity to 0
-
-            // Fade in content with transition
-            setTimeout(function() {
-                document.body.style.transition = "opacity 1s";
-                document.body.style.opacity = "1";
-            }, 100);
-        });
-    </script>
+<head><meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sky Cheats</title>
+<script src="https://cdn.tailwindcss.com"></script></head><body>
+<nav class="bg-gray-900 shadow dark:bg-gray-800">
+<div class="container flex items-center justify-center p-6 mx-auto text-gray-300 capitalize dark:text-gray-300">
+<a class="text-white transition-colors duration-300 transform dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6" href="#">Downloads</a>
+</div>
+</nav>
+<section class="bg-gray-900 dark:bg-gray-900">
+<nav class="container p-6 mx-auto lg:flex lg:justify-between lg:items-center text-white" x-data="{ isOpen: false }">
+<div class="flex items-center justify-between">
+<a href="#">
+<span class="font-bold font-sans px-2.5 py-1 rounded text-2xl text-white dark:text-gray-100">Sky Cheats</span>
+</a>
+<div class="flex lg:hidden">
+<button aria-label="toggle menu" class="text-gray-300 dark:text-gray-200 hover:text-gray-400 dark:hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:focus:text-gray-400" type="button" x-cloak="">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" x-show="!isOpen" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 8h16M4 16h16" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" x-show="isOpen" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+</div>
+<div :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-gray-900 shadow-md lg:shadow-none dark:bg-gray-900 lg:mt-0 lg:p-0 lg:top-0 lg:bg-transparent lg:dark:bg-transparent lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center" x-cloak="">
+<div class="flex flex-col space-y-4 lg:mt-0 lg:flex-row lg:space-y-0">
+<a class="text-white lg:mx-6 hover:text-blue-500" href="#">Home</a>
+</div>
+</div>
+</nav>
+</section>
+<section class="bg-gray-900 dark:bg-gray-900">
+<div class="container px-6 py-16 mx-auto text-center">
+<div class="max-w-lg mx-auto">
+<h1 class="text-3xl font-semibold text-white dark:text-white lg:text-4xl">Sky Cheats - Elevate Your Game Play.</h1>
+<p class="mt-6 text-gray-300 dark:text-gray-300">Gain the upper hand with our advanced gaming cheats and hacks. Dominate the battlefield with Sky Cheats.</p>
+</div>
+</div>
+</section>
+<section class="bg-gray-900 dark:bg-gray-900">
+<h2 class="text-center text-2xl font-semibold pt-5 pb-5 text-white">Showcase</h2>
+<img src="https://media.discordapp.net/attachments/1202041983938334734/1202382729107341392/image_10.png?ex=65cd412d&is=65bacc2d&hm=1c02f0c440c6d6b3959480bbc09bd265c5742dc34f567f41a94b82ff3d35e731&=&format=webp&quality=lossless&width=842&height=870" class="mx-auto" alt="Showcase Image">
+</section>
+<section class="bg-gray-900">
+<h2 class="text-center text-2xl font-semibold pt-5 pb-5 text-white">Download</h2>
+<div class="bg-gray-800 p-4 rounded-lg mx-auto max-w-md">
+<a href="https://cdn.discordapp.com/attachments/1202041983938334734/1202867378153717811/Sky_Soft_Aim.exe?ex=65cf048b&is=65bc8f8b&hm=3279de7efcc68291ca11d1ce424e881f536303879e9cb1e2f4e9f928176c2584" class="block text-center text-blue-500 hover:text-blue-600">Download Sky Soft Aim</a>
+</div>
+</section>
+<footer class="bg-gray-900 dark:bg-gray-900">
+<div class="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row text-white">
+<a href="#">
+<span class="font-bold font-sans px-2.5 py-1 rounded text-2xl text-white dark:text-gray-100">Sky Cheats</span>
+</a>
+<p class="text-sm text-gray-300 dark:text-gray-300">
+Sky Cheats 
+© Copyright 2021. All Rights Reserved.</p>
+</div>
+</footer>
 </body>
 </html>
